@@ -1,0 +1,6 @@
+framework module Pods_vite1_1 {
+  umbrella header "Pods-vite1.1-umbrella.h"
+
+  export *
+  module * { export * }
+}
