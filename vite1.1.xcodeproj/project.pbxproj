@@ -10,12 +10,11 @@
 		1C6E8D90AA6EA7D14C4141AE /* Pods_vite1_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0979726921065C86ED1DA4F /* Pods_vite1_1.framework */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
 		81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814C1A49DA1800E65899 /* ViewController.swift */; };
-		81BA81701A49DB6800E65899 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA816B1A49DB6800E65899 /* Bolts.framework */; };
-		81BA81711A49DB6800E65899 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA816C1A49DB6800E65899 /* Parse.framework */; };
 		81BA81771A49E0D500E65899 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81761A49E0D500E65899 /* libsqlite3.dylib */; };
 		81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81781A49E0DB00E65899 /* AudioToolbox.framework */; };
 		81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */; };
 		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
+		9E17D2C51C603284009CF49D /* EventRequestsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E17D2C41C603284009CF49D /* EventRequestsController.swift */; };
 		9E1A4BBC1C518F23009B2D18 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A4BBB1C518F23009B2D18 /* LoginController.swift */; };
 		9E1A4BC21C51B75B009B2D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E1A4BC11C51B75B009B2D18 /* Assets.xcassets */; };
 		9E1A4BC41C51B7A6009B2D18 /* CreateEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A4BC31C51B7A6009B2D18 /* CreateEventController.swift */; };
@@ -37,12 +36,11 @@
 		81BA81451A49DA1800E65899 /* vite1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vite1.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BA814A1A49DA1800E65899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81BA814C1A49DA1800E65899 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		81BA816B1A49DB6800E65899 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		81BA816C1A49DB6800E65899 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		81BA81761A49E0D500E65899 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		81BA81781A49E0DB00E65899 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		9E17D2C41C603284009CF49D /* EventRequestsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRequestsController.swift; sourceTree = "<group>"; };
 		9E1A4BBB1C518F23009B2D18 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		9E1A4BBD1C5191FD009B2D18 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		9E1A4BC11C51B75B009B2D18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,8 +68,6 @@
 				81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */,
 				81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */,
 				81BA81771A49E0D500E65899 /* libsqlite3.dylib in Frameworks */,
-				81BA81711A49DB6800E65899 /* Parse.framework in Frameworks */,
-				81BA81701A49DB6800E65899 /* Bolts.framework in Frameworks */,
 				1C6E8D90AA6EA7D14C4141AE /* Pods_vite1_1.framework in Frameworks */,
 				9E87C13C1C58458100A7CF4F /* Crashlytics.framework in Frameworks */,
 				9E87C13B1C58458100A7CF4F /* Fabric.framework in Frameworks */,
@@ -125,6 +121,7 @@
 				9E234A851C5A9B54005C07D4 /* settingsTab.swift */,
 				9E234A451C599236005C07D4 /* MenuTransitionManager .swift */,
 				9E87C1341C57481E00A7CF4F /* TransitionManager.swift */,
+				9E17D2C41C603284009CF49D /* EventRequestsController.swift */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -134,8 +131,6 @@
 			children = (
 				9E87C13A1C58458100A7CF4F /* Crashlytics.framework */,
 				9E87C1391C58458100A7CF4F /* Fabric.framework */,
-				81BA816B1A49DB6800E65899 /* Bolts.framework */,
-				81BA816C1A49DB6800E65899 /* Parse.framework */,
 				81BA81751A49E0C500E65899 /* System Frameworks */,
 				D0979726921065C86ED1DA4F /* Pods_vite1_1.framework */,
 			);
@@ -301,6 +296,7 @@
 			files = (
 				9E87C1351C57481E00A7CF4F /* TransitionManager.swift in Sources */,
 				9E234A861C5A9B54005C07D4 /* settingsTab.swift in Sources */,
+				9E17D2C51C603284009CF49D /* EventRequestsController.swift in Sources */,
 				9E1A4BC41C51B7A6009B2D18 /* CreateEventController.swift in Sources */,
 				9E234A461C599236005C07D4 /* MenuTransitionManager .swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,

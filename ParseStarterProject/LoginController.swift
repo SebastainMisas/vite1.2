@@ -51,17 +51,7 @@ class LoginController: UIViewController {
     
     
     
-    override func viewDidAppear(animated: Bool) {
-        // if user is logged in already go to main page else show FB login button
-        if (FBSDKAccessToken.currentAccessToken() != nil)
-        {
-            print("User already logged in")
-            self.performSegueWithIdentifier("ShowMainController", sender: self)
-        }
-        
-
-    }
-
+    
     @IBOutlet weak var webViewBG: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()

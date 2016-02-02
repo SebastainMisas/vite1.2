@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ParseUI.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-vite1.1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,22 +72,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>640AFCDCCEF8B791DFE1358B5FFFCCE0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>74901BC9F095DC9158D6195764E561C4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>94A50FB884552F1E25589DD6EA641782</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AAF8E76C029981279FF8542428B282A0</key>
+		<key>C123EDF07275653F8CE7AAF3C89AFDCA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,7 +87,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>DBCC99ADD30D9782746C4D58DEE5C02F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F289A063A0226BB37BBCC6FABDAFA681</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F5ACF367AE3BD7A7F2AF2D430901DF7B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F710EAB41DD6932844C4A82A87A2628F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

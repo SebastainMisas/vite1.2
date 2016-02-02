@@ -90,6 +90,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-vite1.1/FBSDKShareKit.framework"
   install_framework "Pods-vite1.1/Parse.framework"
   install_framework "Pods-vite1.1/ParseFacebookUtilsV4.framework"
+  install_framework "Pods-vite1.1/ParseUI.framework"
   install_framework "Pods-vite1.1/TNImageSliderViewController.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -99,5 +100,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-vite1.1/FBSDKShareKit.framework"
   install_framework "Pods-vite1.1/Parse.framework"
   install_framework "Pods-vite1.1/ParseFacebookUtilsV4.framework"
+  install_framework "Pods-vite1.1/ParseUI.framework"
   install_framework "Pods-vite1.1/TNImageSliderViewController.framework"
 fi

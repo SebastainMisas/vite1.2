@@ -8,11 +8,8 @@
 */
 
 import UIKit
-
-import Parse
 import ParseFacebookUtilsV4
-import FBSDKCoreKit
-import FBSDKLoginKit
+import Parse
 import Fabric
 import Crashlytics
 
@@ -106,28 +103,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKLoginManager.renewSystemCredentials { (result:ACAccountCredentialRenewResult, error:NSError!) -> Void in
             
         }
-        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        return true
 
     }
     
-    func application(application: UIApplication,
-        openURL url: NSURL,
-        sourceApplication: String?,
-        annotation: AnyObject) -> Bool {
-            
-
-            let isFacebookURL = url.scheme.hasPrefix("fb\(FBSDKSettings.appID())") && url.host == "authorize"
-            if isFacebookURL {
-                return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
-                
-            }
-            return false
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
     }
     
-    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool
-    {
-        return FBSDKApplicationDelegate.sharedInstance().application(app, openURL: url, sourceApplication: options["UIApplicationOpenURLOptionsSourceApplicationKey"] as! String!, annotation: nil)
-    }
     
     func applicationDidEnterBackground(application: UIApplication) {
        // 
@@ -141,35 +125,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: Push Notifications
     //--------------------------------------
 
-    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
-        let installation = PFInstallation.currentInstallation()
-        installation.setDeviceTokenFromData(deviceToken)
-        installation.saveInBackground()
-
-        PFPush.subscribeToChannelInBackground("") { (succeeded: Bool, error: NSError?) in
-            if succeeded {
-                print("ParseStarterProject successfully subscribed to push notifications on the broadcast channel.\n");
-            } else {
-                print("ParseStarterProject failed to subscribe to push notifications on the broadcast channel with error = %@.\n", error)
-            }
-        }
-    }
-
-    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
-        if error.code == 3010 {
-            print("Push notifications are not supported in the iOS Simulator.\n")
-        } else {
-            print("application:didFailToRegisterForRemoteNotificationsWithError: %@\n", error)
-        }
-    }
-
-    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
-        PFPush.handlePush(userInfo)
-        if application.applicationState == UIApplicationState.Inactive {
-            PFAnalytics.trackAppOpenedWithRemoteNotificationPayload(userInfo)
-        }
-    }
-    
+//    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+//        let installation = PFInstallation.currentInstallation()
+//        installation.setDeviceTokenFromData(deviceToken)
+//        installation.saveInBackground()
+//
+//        PFPush.subscribeToChannelInBackground("") { (succeeded: Bool, error: NSError?) in
+//            if succeeded {
+//                print("ParseStarterProject successfully subscribed to push notifications on the broadcast channel.\n");
+//            } else {
+//                print("ParseStarterProject failed to subscribe to push notifications on the broadcast channel with error = %@.\n", error)
+//            }
+//        }
+//    }
+//
+//    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+//        if error.code == 3010 {
+//            print("Push notifications are not supported in the iOS Simulator.\n")
+//        } else {
+//            print("application:didFailToRegisterForRemoteNotificationsWithError: %@\n", error)
+//        }
+//    }
+//
+//    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+//        PFPush.handlePush(userInfo)
+//        if application.applicationState == UIApplicationState.Inactive {
+//            PFAnalytics.trackAppOpenedWithRemoteNotificationPayload(userInfo)
+//        }
+//    }
+//    
     func applicationDidBecomeActive(application: UIApplication) {
         FBSDKAppEvents.activateApp()
         

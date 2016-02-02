@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8CE279FB5294ACA5D24E8CA6E5599DC56CF4C871",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "76E4B26018FAF20B98CEDA104090C01DC68A2102" : 0,
+    "8CE279FB5294ACA5D24E8CA6E5599DC56CF4C871" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D196D3DD-C426-41A8-8876-1C42B634D44C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "76E4B26018FAF20B98CEDA104090C01DC68A2102" : "..\/vite-ios",
+    "8CE279FB5294ACA5D24E8CA6E5599DC56CF4C871" : "vite1.2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "vite1.1",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "vite1.1.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SebastainMisas\/vite-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "76E4B26018FAF20B98CEDA104090C01DC68A2102"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SebastainMisas\/vite1.2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8CE279FB5294ACA5D24E8CA6E5599DC56CF4C871"
+    }
+  ]
+}

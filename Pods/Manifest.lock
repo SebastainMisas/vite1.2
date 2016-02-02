@@ -25,6 +25,9 @@ PODS:
     - FBSDKCoreKit (~> 4.0)
     - FBSDKLoginKit (~> 4.0)
     - Parse (~> 1.8.4)
+  - ParseUI (1.1.6):
+    - Bolts/Tasks (~> 1.2)
+    - Parse (~> 1.8)
   - TNImageSliderViewController (0.1.0)
 
 DEPENDENCIES:
@@ -32,7 +35,9 @@ DEPENDENCIES:
   - FBSDKCoreKit (~> 4.6.0)
   - FBSDKLoginKit (~> 4.6.0)
   - FBSDKShareKit (~> 4.6.0)
+  - Parse
   - ParseFacebookUtilsV4 (~> 1.8.5)
+  - ParseUI
   - TNImageSliderViewController
 
 SPEC CHECKSUMS:
@@ -42,6 +47,7 @@ SPEC CHECKSUMS:
   FBSDKShareKit: f474f1123791e215d0299b98b3ee92ddd9187d86
   Parse: 17ad8e0677ed682f7f00503860fcda0f4eb74168
   ParseFacebookUtilsV4: cc51857cf984c6fc743e7f17c2ddebdb6f02f963
+  ParseUI: 8a22e448c03f825203d8c379c80523517f68baa3
   TNImageSliderViewController: d09b55dab126ce24d183d874018f8542efd137e0
 
 COCOAPODS: 0.39.0

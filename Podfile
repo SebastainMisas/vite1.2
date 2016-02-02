@@ -4,11 +4,13 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'vite1.1' do
-pod ‘ParseFacebookUtilsV4’, '~> 1.8.5'
+pod 'Parse'
+pod 'ParseUI'
+pod 'ParseFacebookUtilsV4', '~> 1.8.5'
 pod 'FBSDKShareKit', '~> 4.6.0'
 pod 'FBSDKLoginKit', '~> 4.6.0'
 pod 'FBSDKCoreKit', '~> 4.6.0'
 pod 'Bolts', '~> 1.2.2'
-pod "TNImageSliderViewController"
+pod 'TNImageSliderViewController'
 end
 
