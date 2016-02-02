@@ -84,22 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-vite1.1/Bolts.framework"
-  install_framework "Pods-vite1.1/FBSDKCoreKit.framework"
-  install_framework "Pods-vite1.1/FBSDKLoginKit.framework"
-  install_framework "Pods-vite1.1/FBSDKShareKit.framework"
-  install_framework "Pods-vite1.1/Parse.framework"
-  install_framework "Pods-vite1.1/ParseFacebookUtilsV4.framework"
-  install_framework "Pods-vite1.1/ParseUI.framework"
   install_framework "Pods-vite1.1/TNImageSliderViewController.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-vite1.1/Bolts.framework"
-  install_framework "Pods-vite1.1/FBSDKCoreKit.framework"
-  install_framework "Pods-vite1.1/FBSDKLoginKit.framework"
-  install_framework "Pods-vite1.1/FBSDKShareKit.framework"
-  install_framework "Pods-vite1.1/Parse.framework"
-  install_framework "Pods-vite1.1/ParseFacebookUtilsV4.framework"
-  install_framework "Pods-vite1.1/ParseUI.framework"
   install_framework "Pods-vite1.1/TNImageSliderViewController.framework"
 fi
