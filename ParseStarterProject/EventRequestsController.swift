@@ -28,18 +28,28 @@ class EventRequestsController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     var tableViewArray = [String]()
+    let image1 = UIImage(named: "12294663_10203804687677120_2383926010236257492_n")
+    let name1 = "sebastain"
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableViewArray.count
-        //        return 10
+//        return tableViewArray.count
+                return 10
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let tempcell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifer", forIndexPath: indexPath)
+        let requestUserCell = tableView.dequeueReusableCellWithIdentifier("requestUserCell", forIndexPath: indexPath) as! requestUserTableViewCell
         
-        tempcell.textLabel?.text = tableViewArray[indexPath.row]
-        return tempcell
+
+        requestUserCell.reqeustUserThumbnail.image =  image1
+        requestUserCell.requestUserName.text = name1
+        
+        return requestUserCell
     }
+
     
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+    }
 }
 

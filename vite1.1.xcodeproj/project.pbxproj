@@ -15,6 +15,7 @@
 		81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */; };
 		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
 		9E17D2C51C603284009CF49D /* EventRequestsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E17D2C41C603284009CF49D /* EventRequestsController.swift */; };
+		9E17D2C71C603A01009CF49D /* requestUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E17D2C61C603A01009CF49D /* requestUserTableViewCell.swift */; };
 		9E1A4BBC1C518F23009B2D18 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A4BBB1C518F23009B2D18 /* LoginController.swift */; };
 		9E1A4BC21C51B75B009B2D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E1A4BC11C51B75B009B2D18 /* Assets.xcassets */; };
 		9E1A4BC41C51B7A6009B2D18 /* CreateEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A4BC31C51B7A6009B2D18 /* CreateEventController.swift */; };
@@ -41,6 +42,7 @@
 		81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		9E17D2C41C603284009CF49D /* EventRequestsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRequestsController.swift; sourceTree = "<group>"; };
+		9E17D2C61C603A01009CF49D /* requestUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = requestUserTableViewCell.swift; sourceTree = "<group>"; };
 		9E1A4BBB1C518F23009B2D18 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		9E1A4BBD1C5191FD009B2D18 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		9E1A4BC11C51B75B009B2D18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				9E234A451C599236005C07D4 /* MenuTransitionManager .swift */,
 				9E87C1341C57481E00A7CF4F /* TransitionManager.swift */,
 				9E17D2C41C603284009CF49D /* EventRequestsController.swift */,
+				9E17D2C61C603A01009CF49D /* requestUserTableViewCell.swift */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E17D2C71C603A01009CF49D /* requestUserTableViewCell.swift in Sources */,
 				9E87C1351C57481E00A7CF4F /* TransitionManager.swift in Sources */,
 				9E234A861C5A9B54005C07D4 /* settingsTab.swift in Sources */,
 				9E17D2C51C603284009CF49D /* EventRequestsController.swift in Sources */,
