@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8C8ECB851F33A08C1B909C63'
+               BlueprintIdentifier = '825F36A6F5E6E5243FE881B8'
                BlueprintName = 'Pods-vite1.1'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_vite1_1.framework'>

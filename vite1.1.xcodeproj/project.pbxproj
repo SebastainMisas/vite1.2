@@ -142,13 +142,13 @@
 				9E87C1361C582B6F00A7CF4F /* choseEventPictureTransitionViewController.swift */,
 				9E1A4BC31C51B7A6009B2D18 /* CreateEventController.swift */,
 				9E1A4BBB1C518F23009B2D18 /* LoginController.swift */,
-				9E485A501C587BDC006B76A3 /* giphy.gif */,
 				9E87C1321C56CA2E00A7CF4F /* profileTab.swift */,
 				9E234A851C5A9B54005C07D4 /* settingsTab.swift */,
 				9E234A451C599236005C07D4 /* MenuTransitionManager .swift */,
 				9E87C1341C57481E00A7CF4F /* TransitionManager.swift */,
 				9E17D2C41C603284009CF49D /* EventRequestsController.swift */,
 				9E17D2C61C603A01009CF49D /* requestUserTableViewCell.swift */,
+				9E485A501C587BDC006B76A3 /* giphy.gif */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -447,7 +447,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parse.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = vite1.1;
-				SWIFT_OBJC_BRIDGING_HEADER = "Resources/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -466,7 +466,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parse.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = vite1.1;
-				SWIFT_OBJC_BRIDGING_HEADER = "Resources/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

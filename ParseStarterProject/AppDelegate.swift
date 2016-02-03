@@ -36,43 +36,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Enable storing and querying data from Local Datastore.
         // Remove this line if you don't want to use Local Datastore features or want to use cachePolicy.
-//        Parse.enableLocalDatastore()
-//
-//        Parse.setApplicationId("OFgFpXhCyLDJzZwAHcTzUIKVauV2Lfx6OEThKsDH",
-//            clientKey: "BfYY7cWSFXvE7YZq8KBeDbgRzkXHUSsRVCTX6Cr7")
+        Parse.enableLocalDatastore()
+
+        Parse.setApplicationId("OFgFpXhCyLDJzZwAHcTzUIKVauV2Lfx6OEThKsDH",
+            clientKey: "BfYY7cWSFXvE7YZq8KBeDbgRzkXHUSsRVCTX6Cr7")
         
         // If you are using Facebook, uncomment and add your FacebookAppID to your bundle's plist as
         // described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/
         // Uncomment the line inside ParseStartProject-Bridging-Header and the following line here:
-//        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
+        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
         // ****************************************************************************
 
-//        PFUser.enableAutomaticUser()
+        PFUser.enableAutomaticUser()
 
-//        let defaultACL = PFACL();
+        let defaultACL = PFACL();
 
         // If you would like all objects to be private by default, remove this line.
         //defaultACL.publicReadAccess = true
 
-//        PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser: true)
+        PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser: true)
 
-//        if application.applicationState != UIApplicationState.Background {
-//            // Track an app open here if we launch with a push, unless
-//            // "content_available" was used to trigger a background push (introduced in iOS 7).
-//            // In that case, we skip tracking here to avoid double counting the app-open.
-//
-//            let preBackgroundPush = !application.respondsToSelector("backgroundRefreshStatus")
-//            let oldPushHandlerOnly = !self.respondsToSelector("application:didReceiveRemoteNotification:fetchCompletionHandler:")
-//            var noPushPayload = false;
-//            if let options = launchOptions {
-//                noPushPayload = options[UIApplicationLaunchOptionsRemoteNotificationKey] != nil;
-//            }
-//            if (preBackgroundPush || oldPushHandlerOnly || noPushPayload) {
-//                PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
-//            }
-//            
-//            
-//        }
+        if application.applicationState != UIApplicationState.Background {
+            // Track an app open here if we launch with a push, unless
+            // "content_available" was used to trigger a background push (introduced in iOS 7).
+            // In that case, we skip tracking here to avoid double counting the app-open.
+
+            let preBackgroundPush = !application.respondsToSelector("backgroundRefreshStatus")
+            let oldPushHandlerOnly = !self.respondsToSelector("application:didReceiveRemoteNotification:fetchCompletionHandler:")
+            var noPushPayload = false;
+            if let options = launchOptions {
+                noPushPayload = options[UIApplicationLaunchOptionsRemoteNotificationKey] != nil;
+            }
+            if (preBackgroundPush || oldPushHandlerOnly || noPushPayload) {
+                PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+            }
+            
+            
+        }
 
         //
         //  Swift 1.2
@@ -109,13 +109,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                FBSDKLoggingBehaviorNetworkRequests,
 //                FBSDKLoggingBehaviorCacheErrors,
 //                FBSDKLoggingBehaviorDeveloperErrors])
+        
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        FBSDKProfile.enableUpdatesOnAccessTokenChange(true)
+        
         FBSDKLoginManager.renewSystemCredentials { (result:ACAccountCredentialRenewResult, error:NSError!) -> Void in
             if ((FBSDKAccessToken.currentAccessToken()) != nil) {
                 print(FBSDKAccessToken.currentAccessToken())
             }
         }
-        FBSDKProfile.enableUpdatesOnAccessTokenChange(true)
-        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         return true;
 
     }

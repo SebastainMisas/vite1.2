@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5233405AD0BE564A9310AEDD'
+               BlueprintIdentifier = '217F415442900C3D1BAD4672'
                BlueprintName = 'TNImageSliderViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'TNImageSliderViewController.framework'>

@@ -11,6 +11,9 @@ import UIKit
 class EventRequestsController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
+    @IBAction func backBtn(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

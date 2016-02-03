@@ -8,6 +8,7 @@
 */
 
 import UIKit
+import Parse
 
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -24,7 +25,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let test = PFObject(className: "TestObject")
+        test.setObject("Karl", forKey: "Foo")
+        test.saveInBackgroundWithBlock { (succeeded, error) -> Void in
+            if (succeeded) {
+                print("Object Saved")
+            } else {
+                print("Object did not save")
+            }
+        }
         
     // making conatiners and images rounded
         userProfilePic.layer.cornerRadius = userProfilePic.frame.size.width/2

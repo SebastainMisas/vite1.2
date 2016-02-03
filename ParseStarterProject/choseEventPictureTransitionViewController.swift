@@ -10,6 +10,9 @@ import UIKit
 
 class choseEventPictureTransitionViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBAction func cancelBtn(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     @IBOutlet weak var galleryIcon: UIButton!
     @IBOutlet weak var galleryLabel: UILabel!
     @IBOutlet weak var cameraIcon: UIButton!
@@ -17,9 +20,7 @@ class choseEventPictureTransitionViewController: UIViewController, UIImagePicker
     // create instance of our custom transition manager
     let transitionManager = MenuTransitionManager()
     
-    @IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
+    
     
     // Uploading images to create event code below
     // -------------------------------------------------------------------
