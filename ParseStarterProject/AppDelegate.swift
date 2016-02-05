@@ -27,12 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        // custom navigation transparency
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), forBarPosition: .Any, barMetrics: .Default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        
         // using frabic for anylitics and crash reports
         Fabric.with([Crashlytics.self])
         
-        //Image Background Navigation Bar
-        let navBackgroundImage:UIImage! = UIImage(named: "nav.jpeg")
-        UINavigationBar.appearance().setBackgroundImage(navBackgroundImage, forBarMetrics: .Default)
+        
         
         // Enable storing and querying data from Local Datastore.
         // Remove this line if you don't want to use Local Datastore features or want to use cachePolicy.
