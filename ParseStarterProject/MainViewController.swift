@@ -11,7 +11,7 @@ import UIKit
 import Parse
 
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class MainViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -38,9 +38,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     // making conatiners and images rounded
         userProfilePic.layer.cornerRadius = userProfilePic.frame.size.width/2
         userProfilePic.clipsToBounds = true
-        eventInfoContainer.layer.cornerRadius = 15.0
-        eventInfoContainer.clipsToBounds = true
-        event.layer.cornerRadius = 15.0
+//        eventInfoContainer.layer.cornerRadius = 15.0
+//        eventInfoContainer.clipsToBounds = true
+        event.layer.cornerRadius = 10.0
         event.clipsToBounds = true
 
     // code to drag the event
